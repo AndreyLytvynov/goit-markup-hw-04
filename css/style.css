@@ -139,7 +139,6 @@ body {
 /* Футер */
 .footer {
   background-color: var(--bgc-footer);
-  padding: 60px 0;
 }
 .footer-contacts {
   margin-top: 20px;
@@ -160,6 +159,35 @@ body {
 .footer-contacts .link:focus,
 .footer-contacts .link:hover {
   color: var(--accent-color);
+}
+.container.footer {
+  display: flex;
+}
+.cocial-media.footer .link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.cocial-media.footer {
+  margin-top: 0;
+}
+
+.logo-adress {
+  margin-right: 70px;
+}
+
+.title-link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.container.footer {
+  padding: 60px 0;
+}
+.links-footer {
+  padding-top: 12px;
 }
 
 /* Блок герой */
@@ -248,6 +276,7 @@ body {
   justify-content: space-between;
 }
 /* Секция наша команда */
+
 .our-team {
   background-color: var(--bgc-teams);
 }
@@ -276,6 +305,62 @@ body {
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.cocial-media {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cocial-media li:not(:last-child) {
+  margin-right: 10px;
+}
+.cocial-media .link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+.cocial-media .link:hover {
+  fill: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+.cocial-media .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Блок наши постоянные клиенты */
+.our-clients {
+  /* outline: 1px solid black; */
+  display: flex;
+}
+
+.our-clients .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+.our-clients .link:hover {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.our-clients li {
+  margin-right: 30px;
+}
+
+.our-clients .icon {
+  width: 106px;
+  height: 60px;
 }
 
 /* Страница portfolio */
