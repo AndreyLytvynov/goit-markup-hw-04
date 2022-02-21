@@ -28,8 +28,16 @@
         </ul>
       </nav>
       <ul class="header-contacts list">
-        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a class="link" href="mailto:info@devstudio.com">
+            <svg class="icon" width="16" height="12">
+              <use href="./images/symbol-defs.svg#icon-letter"></use>
+            </svg>
+            info@devstudio.com</a></li>
+        <li><a class="link" href="tel:+380961111111">
+            <svg class="icon" width="10" height="16">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            +38 096 111 11 11</a></li>
       </ul>
     </div>
   </header>
@@ -38,11 +46,14 @@
   <main>
     <!-- Блок "герой"-->
     <section class="hero">
-      <h1 class="main-title">
-        Эффективное решение <br />
-        для вашего бизнеса
-      </h1>
-      <button type="button" class="order-service button">Заказать услугу</button>
+      <div class="container-hero">
+        <h1 class="main-title">
+          Эффективное решение <br />
+          для вашего бизнеса
+        </h1>
+        <button type="button" class="order-service button">Заказать услугу</button>
+      </div>
+
     </section>
 
     <!-- Секция качества -->
@@ -52,6 +63,12 @@
         <h2 class="header-section qualities">Наши качества</h2>
         <ul class="qualities list">
           <li>
+            <div class="item">
+              <svg class="icon">
+                <use href="./images/symbol-defs.svg#icon-antenna">
+                </use>
+              </svg>
+            </div>
             <h3 class="title">Внимание к деталям</h3>
             <p class="text">
               Идейные соображения, а также начало повседневной работы по
@@ -59,6 +76,10 @@
             </p>
           </li>
           <li>
+            <div class="item"><svg class="icon">
+                <use href="./images/symbol-defs.svg#icon-clock">
+                </use>
+              </svg></div>
             <h3 class="title">Пунктуальность</h3>
             <p class="text">
               Задача организации, в особенности же рамки и место обучения
@@ -66,6 +87,10 @@
             </p>
           </li>
           <li>
+            <div class="item"><svg class="icon">
+                <use href="./images/symbol-defs.svg#icon-diagram">
+                </use>
+              </svg></div>
             <h3 class="title">Планирование</h3>
             <p class="text">
               Равным образом консультация с широким активом в значительной
@@ -73,6 +98,10 @@
             </p>
           </li>
           <li>
+            <div class="item"><svg class="icon">
+                <use href="./images/symbol-defs.svg#icon-astronaut">
+                </use>
+              </svg></div>
             <h3 class="title">Современные технологии</h3>
             <p class="text">
               Значимость этих проблем настолько очевидна, что реализация

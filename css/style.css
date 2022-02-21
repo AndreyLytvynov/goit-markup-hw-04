@@ -117,6 +117,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--paragraph-text-color);
+  fill: var(--paragraph-text-color);
 }
 .header-contacts li:not(:nth-child(-n + 1)) {
   margin-left: 50px;
@@ -124,7 +125,17 @@ body {
 .header-contacts .link:focus,
 .header-contacts .link:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
+.header-contacts .link {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts .icon {
+  margin-right: 10px;
+}
+
 /* Футер */
 .footer {
   background-color: var(--bgc-footer);
@@ -153,10 +164,16 @@ body {
 
 /* Блок герой */
 .hero {
-  background-color: var(--bgc-footer);
   text-align: center;
-  /* padding-top: 199px;
-  padding-bottom: 201px; */
+}
+.container-hero {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: url(../images/hero-background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 200px;
 }
 .main-title {
   font-weight: 900;
@@ -207,6 +224,23 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
+.qualities .icon {
+  width: 70px;
+  height: 70px;
+}
+
+.qualities .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 /* Чем мы занимаемся */
 
 .list.we-doing {
