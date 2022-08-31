@@ -461,9 +461,6 @@ body {
   text-align: center;
 }
 
-.button:hover {
-}
-
 .order-service.button {
   background-color: var(--accent-color);
   color: var(--white-text-color);
